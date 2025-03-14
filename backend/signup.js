@@ -28,7 +28,7 @@ router.post('/signup', (req, res) => {
         if (error) {
             return res.status(500).send('Error sending confirmation email');
         }
-        res.send('Signup successful! Please check your email for confirmation.');
+        res.redirect('/');  // Redirect to index page after successful signup
     });
 });
 
@@ -38,7 +38,7 @@ router.get('/confirm-email', (req, res) => {
     // Confirm user email in database (pseudo code)
     // confirmEmail(userId);
     
-    res.send('Email confirmed successfully!');
+    res.redirect('/');  // Redirect to index page after successful email confirmation
 });
 
 module.exports = router;
