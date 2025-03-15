@@ -1,5 +1,11 @@
 const express = require('express');
 const nodemailer = require('nodemailer');
+const bodyParser = require('body-parser');
+const app = express();
+
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({ extended: true }));
+
 const router = express.Router();
 
 router.post('/signup', (req, res) => {
@@ -41,4 +47,8 @@ router.get('/confirm-email', (req, res) => {
     res.redirect('/');  // Redirect to index page after successful email confirmation
 });
 
-module.exports = router;
+app.use('/', router);
+
+app.listen(3000, () => {
+    console.log('Server is running on port 3000');
+});
