@@ -102,3 +102,36 @@ body {
     padding: 20px;
     margin-top: 20px;
 }
+.social-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.social-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    transition: transform 0.3s ease;
+}
+
+.social-item img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.social-item:hover {
+    transform: scale(1.1);
+}
+
+/* Background Colors */
+.youtube { background-color: #FF0000; }
+.facebook { background-color: #1877F2; }
+.telegram { background-color: #0088cc; }
