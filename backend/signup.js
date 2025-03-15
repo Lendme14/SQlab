@@ -3,6 +3,7 @@ const nodemailer = require('nodemailer');
 const bodyParser = require('body-parser');
 const app = express();
 
+// Middleware to parse JSON and URL-encoded bodies
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
