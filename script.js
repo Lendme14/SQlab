@@ -1,4 +1,3 @@
-console.log("Page is loading...");
 document.addEventListener('DOMContentLoaded', (event) => {
     document.querySelector('body').addEventListener('touchstart', function(event) {
         let sidebar = document.getElementById('sidebar');
@@ -6,11 +5,13 @@ document.addEventListener('DOMContentLoaded', (event) => {
             toggleSidebar();
         }
     });
+
+    document.getElementById('toggleButton').addEventListener('click', toggleSidebar);
 });
 
 function toggleSidebar() {
     let sidebar = document.getElementById("sidebar");
-    if (sidebar.style.left === "-250px") {
+    if (sidebar.style.left === "-250px" || !sidebar.style.left) {
         sidebar.style.left = "0";
         console.log("Sidebar opened.");
     } else {
