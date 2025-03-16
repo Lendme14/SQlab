@@ -167,15 +167,6 @@ body {
     background-color: #0088cc;
 }
 
-.center-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    flex-direction: column;
-    text-align: center;
-}
-
 h1, h2, h3 {
     color: #007BFF;
 }
