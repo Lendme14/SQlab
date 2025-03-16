@@ -3,15 +3,24 @@ body {
     margin: 0;
     padding: 0;
     background: #f4f4f4;
-    text-align: center;
+    color: #333;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    background: #f8f9fa;
+    color: #333;
 }
+
 .header {
     background: #ff5733;
     color: white;
     padding: 20px;
     font-size: 24px;
     font-weight: bold;
+    text-align: center;
 }
+
 .sidebar {
     position: fixed;
     left: -250px;
@@ -23,6 +32,7 @@ body {
     padding-top: 20px;
     transition: 0.3s;
 }
+
 .sidebar a {
     display: block;
     color: white;
@@ -30,9 +40,11 @@ body {
     text-decoration: none;
     text-align: left;
 }
+
 .sidebar a:hover {
     background: #ff5733;
 }
+
 .sidebar-toggle {
     position: fixed;
     left: 10px;
@@ -44,6 +56,7 @@ body {
     cursor: pointer;
     border-radius: 5px;
 }
+
 .container {
     max-width: 800px;
     margin: 20px auto;
@@ -52,6 +65,7 @@ body {
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
+
 .btn {
     display: inline-block;
     margin: 10px;
@@ -62,19 +76,23 @@ body {
     border-radius: 5px;
     transition: 0.3s;
 }
+
 .btn:hover {
     background: #c70039;
 }
+
 .slider {
     width: 100%;
     max-width: 800px;
     overflow: hidden;
     margin: 20px auto;
 }
+
 .slider img {
     width: 100%;
     border-radius: 10px;
 }
+
 .iframe-ad {
     width: 100%;
     max-width: 800px;
@@ -82,6 +100,7 @@ body {
     margin: 20px auto;
     border: none;
 }
+
 .comment-section {
     max-width: 800px;
     margin: 20px auto;
@@ -91,22 +110,25 @@ body {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     text-align: left;
 }
+
 .comment-section textarea {
     width: 100%;
     height: 100px;
     margin-top: 10px;
 }
+
 .footer {
     background: #333;
     color: white;
     padding: 20px;
     margin-top: 20px;
 }
+
 .social-grid {
     display: flex;
-    justify-content: center;  /* Centers horizontally */
-    align-items: center;  /* Centers vertically */
-    gap: 15px;  /* Spacing between icons */
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
     padding: 20px;
     text-align: center;
 }
@@ -133,101 +155,31 @@ body {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
-/* Background Colors */
-.youtube { background-color: #FF0000; }
-.facebook { background-color: #1877F2; }
-.telegram { background-color: #0088cc; }
+.youtube {
+    background-color: #FF0000;
+}
 
-/* Center the entire section */
+.facebook {
+    background-color: #1877F2;
+}
+
+.telegram {
+    background-color: #0088cc;
+}
+
 .center-container {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh; /* Makes it take full screen height */
+    height: 100vh;
     flex-direction: column;
     text-align: center;
 }
 
-            /* General Styles */
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background: #f4f4f4;
-    color: #333;
-}
-
-/* Header */
-.header {
-    background: #007BFF;
-    color: white;
-    text-align: center;
-    padding: 20px;
-    font-size: 24px;
-}
-
-/* Sidebar Navigation */
-.sidebar {
-    width: 200px;
-    background: #333;
-    color: white;
-    position: fixed;
-    height: 100%;
-    left: -200px;
-    top: 0;
-    transition: 0.3s;
-    padding-top: 20px;
-}
-
-.sidebar a {
-    display: block;
-    color: white;
-    padding: 15px;
-    text-decoration: none;
-}
-
-.sidebar a:hover {
-    background: #575757;
-}
-
-.sidebar.active {
-    left: 0;
-}
-
-/* Sidebar Toggle Button */
-.sidebar-toggle {
-    position: absolute;
-    left: 20px;
-    top: 20px;
-    background: #007BFF;
-    color: white;
-    padding: 10px 15px;
-    border: none;
-    cursor: pointer;
-    font-size: 18px;
-}
-
-.sidebar-toggle:hover {
-    background: #0056b3;
-}
-
-/* General Styles */
-body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    max-width: 800px;
-    margin: auto;
-    padding: 20px;
-    background: #f8f9fa;
-    color: #333;
-}
-
-/* Headings */
 h1, h2, h3 {
     color: #007BFF;
 }
 
-/* Lists */
 ul {
     list-style-type: square;
     padding-left: 20px;
@@ -237,7 +189,6 @@ ul li {
     margin-bottom: 8px;
 }
 
-/* Call-to-Action (CTA) Section */
 .cta {
     text-align: center;
     margin-top: 20px;
@@ -262,10 +213,8 @@ ul li {
     background: #003f7f;
 }
 
-/* Responsive Design */
 @media screen and (max-width: 600px) {
     body {
         padding: 15px;
     }
 }
-
