@@ -148,27 +148,124 @@ body {
     text-align: center;
 }
 
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            max-width: 800px;
-            margin: auto;
-            padding: 20px;
-        }
-        h1, h2, h3 {
-            color: #333;
-        }
-        ul {
-            list-style-type: square;
-        }
-        .cta {
-            text-align: center;
-            margin-top: 20px;
-        }
-        .cta a {
-            display: inline-block;
-            padding: 10px 20px;
-            background: #007BFF;
-            color: white;
-            text-decoration: none;
-            border-radius: 5px;
-        }
+            /* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f4f4f4;
+    color: #333;
+}
+
+/* Header */
+.header {
+    background: #007BFF;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 24px;
+}
+
+/* Sidebar Navigation */
+.sidebar {
+    width: 200px;
+    background: #333;
+    color: white;
+    position: fixed;
+    height: 100%;
+    left: -200px;
+    top: 0;
+    transition: 0.3s;
+    padding-top: 20px;
+}
+
+.sidebar a {
+    display: block;
+    color: white;
+    padding: 15px;
+    text-decoration: none;
+}
+
+.sidebar a:hover {
+    background: #575757;
+}
+
+.sidebar.active {
+    left: 0;
+}
+
+/* Sidebar Toggle Button */
+.sidebar-toggle {
+    position: absolute;
+    left: 20px;
+    top: 20px;
+    background: #007BFF;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.sidebar-toggle:hover {
+    background: #0056b3;
+}
+
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    background: #f8f9fa;
+    color: #333;
+}
+
+/* Headings */
+h1, h2, h3 {
+    color: #007BFF;
+}
+
+/* Lists */
+ul {
+    list-style-type: square;
+    padding-left: 20px;
+}
+
+ul li {
+    margin-bottom: 8px;
+}
+
+/* Call-to-Action (CTA) Section */
+.cta {
+    text-align: center;
+    margin-top: 20px;
+    padding: 20px;
+    background: #007BFF;
+    color: white;
+    border-radius: 8px;
+}
+
+.cta a {
+    display: inline-block;
+    padding: 12px 25px;
+    background: #0056b3;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+
+.cta a:hover {
+    background: #003f7f;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 600px) {
+    body {
+        padding: 15px;
+    }
+}
+
